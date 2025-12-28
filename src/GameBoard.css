@@ -1,8 +1,26 @@
-.loading{
+.loading-container{
     display: flex;
     position: fixed;
     align-items: center;
     justify-content: center;
-    width: 20px;
-    height: 20px;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
+
+.loading-container img{
+    width: 40px;
+    height: 40px;
+}
+
+.card-box{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 5px;
+    justify-content: center;
+    width: 100%;
+}
+
+

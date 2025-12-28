@@ -5,18 +5,19 @@ import GameBoard from "./GameBoard.jsx";
 
 function App() {
     const [selectedLevel, setSelectedLevel] = useState(undefined);
+    const [score, setScore] = useState({score:0, bestScore:0});
 
+    return (
+        <>
+            <h1>Memory game</h1>
+            {selectedLevel === undefined ?
+                (<LevelSelect setSelectedLevel={setSelectedLevel} />)
+                : (  <GameBoard selectedLevel={selectedLevel} setSelectedLevel={setSelectedLevel} score={score} setScore={setScore} />)
 
-    if(selectedLevel === undefined){
-        return(
-            <LevelSelect setSelectedLevel={setSelectedLevel} />
-        )
-    }
-    if(selectedLevel){
-        return (
-                <GameBoard selectedLevel={selectedLevel} />
-        )
-    }
+            }
+        </>
+    )
+
 }
 
 export default App

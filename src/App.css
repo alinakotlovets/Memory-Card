@@ -1,8 +1,9 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
+  width: 100%;
 }
 
 .logo {
@@ -39,4 +40,45 @@
 
 .read-the-docs {
   color: #888;
+}
+
+
+.flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+.grey-bnt{
+  background-color: var(--grey);
+  color: black;
+  transition: background-color var(--transition);
+}
+
+.grey-bnt:hover,
+.grey-bnt:focus{
+  background-color: var(--grey-button-hover-color);
+}
+
+.blue-btn{
+  background-color: var(--blue);
+  transition: background-color var(--transition);
+}
+
+
+.red-btn{
+  background-color: var(--red);
+  transition: background-color var(--transition);
+}
+
+.blue-btn:focus,
+.blue-btn:hover {
+  background-color: var(--blue-button-hover-color);
+}
+
+.red-btn:focus,
+.red-btn:hover{
+  background-color: var(--red-button-hover-color);
 }
